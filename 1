@@ -1,0 +1,23 @@
+You are given a string S and width W. Your task is to wrap the string into a paragraph of width.
+
+Input:
+ABCDEFGHIJKLIMNOQRSTUVWXYZ
+4
+
+Output:
+ABCD
+EFGH
+IJKL
+IMNO
+QRST
+UVWX
+YZ
+
+Explanation:
+Spliting the long string into substrings by using the given width.
+
+Code:
+import textwrap
+string = input()
+width = int(input())
+print(textwrap.fill(string,width))
